@@ -1,4 +1,5 @@
-// класс, содержащий данные для соединения с сервером
+// Class witch contains the data to connect to the DB server
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +13,16 @@ namespace SharpSniffer
     {
         public static MySqlConnection GetDBConnection()
         {
+            // Data
+            
             string host = "127.0.0.1";
             int port = 3306;
-            string database = "ваша ДБ";
-            string username = "ваш MySQL юзер";
-            string password = "ваш пароль";
+            string database = "Your_DB_name";
+            string username = "Your_DB_User";
+            string password = "Your_User_Pass";
             return DBMySQLUtils.GetDBConnection(host, port, database, username, password);
         }
 
     }
 }
+// CREATED BY SERGEY BESEDIN
