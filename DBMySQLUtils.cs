@@ -1,4 +1,5 @@
-// нужно для привязки к БД MySql
+// Reqire for connect database 
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace SharpSniffer
         public static MySqlConnection
                 GetDBConnection(string host, int port, string database, string username, string password)
         {
-            // Строка соединения
+            // Connection string
             String connString = "Server=" + host + ";Database=" + database
                 + ";port=" + port + ";User Id=" + username + ";password=" + password;
             MySqlConnection conn = new MySqlConnection(connString);
