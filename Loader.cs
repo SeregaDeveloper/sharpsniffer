@@ -1,4 +1,4 @@
-// класс, в котором будут находиться все основные операции для работы над БД
+// Class witch contains main operations
 
 using System;
 using System.Collections.Generic;
@@ -16,23 +16,23 @@ namespace SharpSniffer
         static void Main(string[] args)
         {
 
-            // Получаю соединение к базе данных.
+            // Get connection to database
             MySqlConnection connection = DbUtils.GetDBConnection();
             connection.Open();
             try
             {
-                // Команда Insert.
+                // Insert command
                 string sql = "Insert into  "  + " values  ";
 
                 MySqlCommand cmd = connection.CreateCommand();
                 cmd.CommandText = sql;
 
-               // тут будут объявлены все основные операции производимые над БД
+               // to do operations here) 
              
 
                
                
-               // Выполнить Command (использованная для  delete, insert, update).
+               // Do Command ( delete, insert, update).
                 int rowCount = cmd.ExecuteNonQuery();
 
                 Console.WriteLine("Row Count affected = " + rowCount);
