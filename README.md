@@ -1,4 +1,4 @@
-# Sniffer-on-C--with-MySQL-Database
+# Sniffer-on-C#-with-MySQL-Database
 Intrusion Detection System - User's part
 
 This project is only the user part of our IDS. 
