@@ -1,6 +1,8 @@
 # Sniffer on C# with MySQL Database
 Intrusion Detection System - User's part
 
+One of the my first programms on C#
+
 This project is only the user part of my IDS. 
 His main task is to collect data during user's session and load all information into MySQL Database. 
 Work in progress
